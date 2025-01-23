@@ -44,8 +44,9 @@ export const App = () => {
             <tr
               data-cy="Good"
               className={
-                selectedGood === good && 'has-background-success-light'
+                selectedGood === good ? 'has-background-success-light' : ''
               }
+              key={good}
             >
               <td>
                 <button
